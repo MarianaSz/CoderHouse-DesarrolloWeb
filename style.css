@@ -1,0 +1,210 @@
+/* Ver esta paleta de colores: https://coolors.co/849483-4e937a-b4656f-948392-c7f2a7 */
+
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Barrá Menú Navegacion */
+
+.navegacion{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #386641;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navegacion img{
+  padding: 0 20px;
+}
+
+.navegacion div ul{
+	display: flex;
+	justify-content:row;
+	list-style: none;
+}
+
+.navegacion div ul li a{
+	color: white;
+	padding: 15px;
+  text-decoration: none;
+}
+
+.navegacion div ul li a:hover{
+	background: #A7C957;
+	color: #386641;
+}
+
+/* .navegacion div ul li a div ul{ */
+/* .submenu{
+  background: #386641;
+	position: absolute;
+	width: 210px;
+	list-style: none;
+	display: none;
+}
+
+.navegacion div ul li a:hover > .submenu{
+	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+.navegacion > ul > li a div > ul > li > a{
+	color: white;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navegacion > ul > li a div > ul > li:hover a{
+	background-color: #A7C957;
+}
+
+
+.submenu{
+  position: absolute;
+  display: none;
+  background-color: #7B506F;
+}
+
+.submenu li a{
+  padding: 9px;
+  display: block;
+  color: #EEFFDB;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+  display: block;
+}
+
+/* SECTION */
+section{
+	margin: 10px auto;
+	padding: 50px;
+	text-align: center;
+}
+
+/*PRESENTACION */
+.presentacion h1{
+	font-size: 50px;
+	font-family: 'Cantata One', serif;
+	letter-spacing: 3px;
+	padding: 15px;
+}
+
+.presentacion h3{
+	padding: 0 200px;
+}
+
+/*CONTENIDOS*/
+.contenido{
+	background-color: #BC4749;
+	display:flex;
+	flex-direction:column;
+}
+.contenido a h2{
+	font-size: 28px;
+	font-style: italic;
+	font-family: 'Cantata One', serif;
+	color: #522E38;
+}
+.contenido > div{
+	border: dashed 2px #d77a61;
+	padding: 5px 5px;
+	margin-bottom: 7px;
+	display: inline-flex;
+}
+.contenido div p{
+	padding: 20px 100px;
+	color:white;
+}
+
+/*PODCAST*/
+.podcast{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.podcast div{
+	padding: 10px 25px;
+}
+.podcast div p{
+	width: 300px;
+}
+.podcast h2{
+	font-weight: bolder;
+	font-size: 35px;
+	color:black;
+	padding: 10px 0;
+}
+
+/* BANNER HORIZONTAL */
+.banner-horizontal{
+	background: url('../images/imagen_libros1.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 400px 100px;
+	background-color: #A7C957;
+    height:100px;
+    display:flex;
+    align-items: center;
+}
+
+.banner-horizontal p{
+	text-align: center;
+	padding-left: 200px;
+	color: white;
+	font-style: italic;
+	font-size: 25px;
+	text-shadow: 0 0 5px black;
+}
+
+/* FOOTER */
+footer{
+	margin-top:100px;
+	background-color: #386641;
+	text-align: center;
+	padding: 10px;
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center
+	justify-content: center;
+}
+footer > div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+footer a{
+	color: #FFFFFF;
+	padding:5px 10px;
+}
+footer a:hover{
+	color:#A7C957;
+}
+
+
+/*Videos */
+
+.videos{
+  width: 100%;
+  text-align: center;
+}
+.videos > div{
+  display: inline-block;
+}

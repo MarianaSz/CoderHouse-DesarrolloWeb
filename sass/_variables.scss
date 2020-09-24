@@ -1,0 +1,34 @@
+/*Screen sizes*/
+$screen_small: "576px";
+$screen_medium: "768px";
+$screen_large: "992px";
+$screen_xlarge: "1200px";
+
+$mobile: "only screen and (max-width: #{$screen_small - 1})";
+$mobile_landscape: "only screen and (min-width: #{$screen_small}) and (orientation : landscape)";
+
+$tablet: "only screen and (min-width: #{$screen_medium})";
+$tablet_portrait: "only screen and (min-width: #{$screen_medium}) and (orientation : portrait)";
+$tablet_landscape: "only screen and (min-width: #{$screen_medium}) and (orientation : landscape)";
+$tablet_max: "only screen and (max-width: #{$screen_large - 1})";
+$normal: "only screen and (min-width: #{$screen_large})";
+$desktop: "only screen and (min-width: #{$screen_xlarge})";
+
+/* Fonts */
+$main-font: "Gudea", sans-serif;
+$special-font: "Cantata One", serif;//"Lobster", cursive;
+
+/* Font sizes */
+$font-size-base: 16px !default;
+
+/* Colors */
+$light-turquoise: #7CD4D6;
+$turquoise: #028090;
+$dark-turquoise: #1A5E63;
+$grey: #EBEBEC;
+$beige: #D9CAB3;
+$color-wine: #89043D;
+$light-color-wine: #AB1F43;
+$celadon: #9BDEAC;
+$celadon-rgb: "155,222,172";
+$red: #BB010B;

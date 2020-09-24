@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="Si queres contactarte conmigo hacelo aca!">
+    <title>Bibliotacora - Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <nav class="navegacion navbar navbar-expand-lg shadow fixed-top navbar--custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./images/BBlogo2.JPG" alt="logo-bibliotacora" width="100px" height="45px">
+        </a>
+        <button class="navbar-toggler btn-info" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon align-self-center"><img src="./images/plus.svg" alt="icono-plus"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="menu navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active"href="index.html">Inicio</a></li>
+            <li class="nav-item">
+              <a class="nav-link active"href="aboutme.html">Sobre mí</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+     href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#"> Contenido </a>
+                  <div class="dropdown-menu navbar--custom">
+                    <a class="dropdown-item" href="reseñas.html"> Reseñas</a>
+                    <a class="dropdown-item" href="videos.html"> Videos</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="novedades.html"> Novedades</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html"> Contacto </a>
+            </li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid seccion-formulario d-flex flex-column  align-items-center">
+      <div class="m-lg-3">
+         <h1 class="animate__animated animate__bounceIn">Contactate!</h1>
+      </div>
+      <div>
+        <form class="m-2 d-flex flex-column align-items-center justify-content-center " action="index.html" method="post">
+            <div class="form-inline p-1">
+              <label class="sr-only" for="nameForm">Nombre </label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Nombre</div>
+                </div>
+                <input type="text" name="nameForm" class="form-control" id="nameForm">
+              </div>
+              <label class="sr-only" for="surnameForm">Apellido </label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Apellido</div>
+                </div>
+                <input type="text" class="form-control" id="surnameForm" name="surnameForm">
+              </div>
+            </div>
+            <div class="p-1 form-inline">
+                <label class="sr-only" for="emailForm">Email</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Email</div>
+                    </div>
+                <input type="text" class="form-control" id="emailForm" name="emailForm">
+                </div>
+                <label class="sr-only" for="conocimientoForm">Como me conociste?</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Cómo me conociste?</div>
+                    </div>
+                <select requested name="conocimientoForm">
+                  <option value="" disabled selected hidden></option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="amigos">Amigos</option>
+                </select>
+              </div>
+            </div>
+            <div class="p-3">
+                <label class="d-none" for="comentario">Comentario</label>
+                <textarea id="comentario" name="Comentario" placeholder="Comentarios"></textarea>
+            </div>
+            <div class="p-3">
+                <button type="submit" class="btn boton-enviar mb-2">ENVIAR</button>
+            </div>
+        </form>
+      </div>
+    </section>
+    <footer class="navbar--custom d-flex flex-column justify-content-center align-items-center">
+       <div class="p-2 footer-red-social">
+           <a class="p-2 footer__red-social--facebook" href="https://www.facebook.com/bibliotacora">
+             <i class="fa fa-facebook-square"></i>
+           </a>
+           <a class="p-2 footer__red-social--instagram" href="https://www.instagram.com/bibliotacora/?hl=es-la">
+             <i class="fa fa-instagram"></i>
+           </a>
+           <a class="p-2 footer__red-social--twitter" href="https://twitter.com/bibliotacora">
+             <i class="fa fa-twitter"></i>
+           </a>
+           <a class="p-2 footer__red-social--youtube" href="https://www.youtube.com/c/BibliotacoraLibros/featured">
+             <i class="fa fa-youtube-play"></i>
+           </a>
+       </div>
+       <div>
+          <p>By Lucía Osorio </p>
+       </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

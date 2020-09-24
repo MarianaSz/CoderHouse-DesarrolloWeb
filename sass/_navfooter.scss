@@ -1,0 +1,39 @@
+.navbar--custom{
+    background-color: $light-turquoise;
+    a,p{
+      color: $dark-turquoise;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+}
+
+.navbar-toggler-icon{
+  color:white;
+}
+.active:hover {
+    border-bottom: solid 2px $turquoise;
+    color: $dark-turquoise;
+}
+
+// Footer:
+
+//maps:
+$red-social:(
+  facebook: #1d4e89,
+  instagram: #e71b73,
+  twitter: #0496ff,
+  youtube: #bf0603
+);
+
+@each $red, $icon-color in $red-social{
+  .footer__red-social--#{$red}{
+      i{
+        color: $icon-color;
+        font-size: 1.1rem;
+        &:hover{
+          color: white;
+          font-size: 1.25rem;
+        }
+      }
+  }
+}
