@@ -51,8 +51,9 @@ body {
   font-size: 3.6rem; }
 
 .presentacion .presentacion__texto {
-  font-size: 1rem;
-  line-height: 28px; }
+  margin: 4rem 7rem;
+  font-size: 1.1rem;
+  line-height: 32px; }
 
 .intro-contenido {
   margin: 0 30px;
@@ -96,7 +97,7 @@ body {
   margin: 0 auto; }
   .aboutme-trabajos .aboutme-trabajos__titulo {
     font-family: "dream_orphansregular";
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 10px;
     color: #89043D; }
@@ -104,17 +105,17 @@ body {
       color: #AB1F43;
       font-size: 1.6rem; }
   .aboutme-trabajos #aboutme-trabajos__lista {
-    margin: 25px auto;
+    list-style-type: none;
+    margin: 30px auto;
     padding: 20px;
-    background-color: #D9CAB3;
+    background-color: rgba(155, 222, 172, 0.35);
     width: 46rem;
     text-align: left;
     line-height: 1.4rem;
-    color: #89043D;
     display: none;
     overflow: hidden; }
     .aboutme-trabajos #aboutme-trabajos__lista li {
-      padding: 10px 15px; }
+      padding: 15px 15px; }
 
 .triangle {
   position: relative;
@@ -137,99 +138,84 @@ body {
   .triangle .triangle__titulo--resize {
     font-size: 3.4rem; }
 
-.contenedor-reseñas .btn-secondary {
-  background-color: #028090;
-  color: white;
-  font-weight: 400; }
-
-.contenedor-reseñas .reseña-1 .reseña-1__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-1__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-1 .reseña-1__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-1 .reseña-1__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-1__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-1__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
 
-.contenedor-reseñas .reseña-2 .reseña-2__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-2__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-2 .reseña-2__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-2 .reseña-2__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-2__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-2__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
 
-.contenedor-reseñas .reseña-3 .reseña-3__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-3__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-3 .reseña-3__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-3 .reseña-3__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-3__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-3__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
 
-.contenedor-reseñas .reseña-4 .reseña-4__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-4__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-4 .reseña-4__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-4 .reseña-4__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-4__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-4__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
 
-.contenedor-reseñas .reseña-5 .reseña-5__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-5__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-5 .reseña-5__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-5 .reseña-5__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-5__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-5__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
 
-.contenedor-reseñas .reseña-6 .reseña-6__titulo {
-  margin: 15px 23px;
-  height: 40px;
-  opacity: 1;
+.contenedor-reseñas .reseña-6__titulo {
   font-weight: 500;
-  font-size: 1.3rem;
-  font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
+  font-size: 1.4rem;
+  font-family: "dream_orphansregular";
   padding: 5px 0; }
-  .contenedor-reseñas .reseña-6 .reseña-6__titulo a {
-    color: #1A5E63; }
-    .contenedor-reseñas .reseña-6 .reseña-6__titulo a:hover {
-      font-size: 1.5rem; }
+  .contenedor-reseñas .reseña-6__titulo a {
+    color: #028090; }
+    .contenedor-reseñas .reseña-6__titulo a:hover {
+      font-size: 1.5rem;
+      color: #1A5E63; }
+
+.contenedor-reseñas .modal-header {
+  background-color: #9BDEAC; }
 
 .contenedor-reseñas .modal-title {
   font-family: "dream_orphansbold";
-  background-color: #9BDEAC;
   color: #1A5E63; }
+
+.contenedor-reseñas .modal-footer .btn-secondary {
+  background-color: #9BDEAC;
+  color: #1A5E63;
+  font-weight: 400;
+  border: none; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .contenedor-reseñas .m-1 .col-md-6 {
@@ -256,7 +242,7 @@ body {
 
 .seccion-podcast {
   background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position-y: 230px;
   background-position-x: center;
   background-size: 2200px 300px;
@@ -267,6 +253,7 @@ body {
     text-align: center;
     overflow: hidden; }
     .seccion-podcast > div .seccion-podcast__titulo {
+      font-family: "dream_orphansbold";
       font-size: 2.4rem;
       padding: 10px;
       font-weight: 500;
@@ -274,12 +261,19 @@ body {
     .seccion-podcast > div .seccion-podcast__texto {
       color: white;
       line-height: 24px; }
+      .seccion-podcast > div .seccion-podcast__texto a {
+        color: inherit;
+        font-weight: bold; }
+        .seccion-podcast > div .seccion-podcast__texto a:hover {
+          color: #9BDEAC; }
+    .seccion-podcast > div .iconos-podcast {
+      text-align: center; }
     .seccion-podcast > div iframe {
       overflow: hidden; }
 
 .seccion-cursos .seccion-cursos__titulo {
   color: #89043D;
-  font-family: "Cantata One", serif;
+  font-family: "dream_orphansbold_italic";
   font-style: italic;
   font-size: 2.3rem;
   font-weight: 400;
@@ -311,7 +305,6 @@ body {
   background-position: center; }
   .seccion-formulario h1 {
     font-size: 3.9rem;
-    font-weight: bold;
     color: #9BDEAC;
     text-shadow: 0 0 3px #EBEBEC;
     padding: 20px 0; }

@@ -27,8 +27,9 @@ body{
       font-size: 3.6rem;
   }
   .presentacion__texto{
-      font-size: 1rem;
-      line-height: 28px;
+      margin: 4rem 7rem;
+      font-size: 1.1rem;
+      line-height: 32px;
   }
 }
 
@@ -87,7 +88,7 @@ body{
    margin: 0 auto;
   .aboutme-trabajos__titulo{
       font-family: $font-dream-regular;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
       padding: 10px;
       color: $color-wine;
@@ -97,17 +98,17 @@ body{
       }
     }
     #aboutme-trabajos__lista{
-      margin: 25px auto;
+      list-style-type: none;
+      margin: 30px auto;
       padding: 20px;
-      background-color: $beige;
+      background-color: rgba(155,222,172,0.35);
       width: 46rem;
       text-align: left;
       line-height: 1.4rem;
-      color: $color-wine;
       display: none;
       overflow: hidden;
       li{
-          padding: 10px 15px;
+          padding: 15px 15px;
       }
     }
 }
@@ -140,38 +141,36 @@ body{
   }
 }
 
-
-
 .contenedor-reseñas{
-  .btn-secondary{ //sobreescribo bootstrap
-    background-color: $turquoise;
-    color: white;
-    font-weight: 400;
-  }
   @for $index from 1 through 6{
-    .reseña-#{$index}{
       .reseña-#{$index}__titulo{
-        margin: 15px 23px;
-        height: 40px;
-        opacity: 1;
         font-weight: 500;
-        font-size: 1.3rem;
-        font-family: $font-dream-bold;
-        background-color: $celadon;
+        font-size: 1.4rem;
+        font-family: $font-dream-regular;
         padding: 5px 0;
         a{
-          color: $dark-turquoise;
+          color: $turquoise;
           &:hover{
              font-size: 1.5rem;
+             color: $dark-turquoise;
            }
         }
        }
-     }
+   }
+   .modal-header{
+      background-color: $celadon;
    }
    .modal-title{
      font-family: $font-dream-bold;
-     background-color: $celadon;
      color:$dark-turquoise;
+   }
+   .modal-footer{
+     .btn-secondary{ //sobreescribo bootstrap
+       background-color: $celadon;
+       color: $dark-turquoise;
+       font-weight: 400;
+       border: none;
+     }
    }
  }
 
@@ -217,7 +216,7 @@ body{
 //novedades.html
 .seccion-podcast{
   background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position-y: 230px;
   background-position-x: center;
   background-size: 2200px 300px;
@@ -228,6 +227,7 @@ body{
       text-align: center;
       overflow: hidden;
       .seccion-podcast__titulo{
+          font-family: $font-dream-bold;
           font-size: 2.4rem;
           padding: 10px;
           font-weight: 500;
@@ -236,6 +236,16 @@ body{
       .seccion-podcast__texto{
           color: white;
           line-height: 24px;
+          a{
+            color: inherit;
+            font-weight: bold;
+            &:hover{
+              color: $celadon;
+            }
+          }
+    }
+    .iconos-podcast{
+      text-align: center;
     }
     iframe{
       overflow: hidden;
@@ -246,7 +256,7 @@ body{
 .seccion-cursos{
   .seccion-cursos__titulo{
       color: $color-wine;
-      font-family: $special-font;
+      font-family: $font-dream-italic;
       font-style: italic;
       font-size: 2.3rem;
       font-weight: 400;
@@ -275,7 +285,6 @@ body{
   background-image: $color-wine;
 }
 
-
 //contacto.html
 .seccion-formulario{
   margin: 50px 0 0 0;
@@ -285,7 +294,6 @@ body{
   background-position:center;
   h1{
       font-size: 3.9rem;
-      font-weight: bold;
       color: $celadon;
       text-shadow: 0 0 3px $grey;
       padding: 20px 0;

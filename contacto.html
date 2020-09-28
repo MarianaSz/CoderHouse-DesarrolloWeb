@@ -24,11 +24,11 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/main.css">
   </head>
-  <body>
+  <body class="h-100">
     <nav class="navegacion navbar navbar-expand-lg shadow fixed-top navbar--custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="./images/BBlogo2.JPG" alt="logo-bibliotacora" width="100px" height="45px">
+            <img src="./images/BBlogo2.jpg" alt="logo-bibliotacora" width="85px" height="45px">
         </a>
         <button class="navbar-toggler btn-info" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon align-self-center"><img src="./images/plus.svg" alt="icono-plus"></span>
@@ -43,7 +43,7 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown"
      href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#"> Contenido </a>
                   <div class="dropdown-menu navbar--custom">
-                    <a class="dropdown-item" href="reseñas.html"> Reseñas</a>
+                    <a class="dropdown-item" href="resenias.html"> Reseñas</a>
                     <a class="dropdown-item" href="videos.html"> Videos</a>
                   </div>
             </li>
@@ -56,21 +56,21 @@
         </div>
       </div>
     </nav>
-    <section class="container-fluid seccion-formulario d-flex flex-column  align-items-center">
+    <section class="container-fluid seccion-formulario d-flex flex-column align-items-center h-100">
       <div class="m-lg-3">
          <h1 class="animate__animated animate__bounceIn">Contactate!</h1>
       </div>
-      <div>
-        <form class="m-2 d-flex flex-column align-items-center justify-content-center " action="index.html" method="post">
+      <div class="container">
+        <form class="d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInDownBig m-2" action="index.html" method="post">
             <div class="form-inline p-1">
-              <label class="sr-only" for="nameForm">Nombre </label>
+              <label class="sr-only" for="nameForm">Nombre</label>
               <div class="input-group mb-2 mr-sm-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text">Nombre</div>
                 </div>
                 <input type="text" name="nameForm" class="form-control" id="nameForm">
               </div>
-              <label class="sr-only" for="surnameForm">Apellido </label>
+              <label class="sr-only" for="surnameForm">Apellido</label>
               <div class="input-group mb-2 mr-sm-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text">Apellido</div>
@@ -80,7 +80,7 @@
             </div>
             <div class="p-1 form-inline">
                 <label class="sr-only" for="emailForm">Email</label>
-                <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group d-flex mb-2 mr-sm-2">
                     <div class="input-group-prepend">
                         <div class="input-group-text">Email</div>
                     </div>
@@ -91,7 +91,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text">Cómo me conociste?</div>
                     </div>
-                <select requested name="conocimientoForm">
+                <select class="flex-grow-1" requested name="conocimientoForm">
                   <option value="" disabled selected hidden></option>
                   <option value="instagram">Instagram</option>
                   <option value="facebook">Facebook</option>
@@ -100,11 +100,11 @@
                 </select>
               </div>
             </div>
-            <div class="p-3">
-                <label class="d-none" for="comentario">Comentario</label>
+            <div class="form-group p-3">
+                <label class="sr-only" for="comentario">Comentario</label>
                 <textarea id="comentario" name="Comentario" placeholder="Comentarios"></textarea>
             </div>
-            <div class="p-3">
+            <div class="form-group p-3">
                 <button type="submit" class="btn boton-enviar mb-2">ENVIAR</button>
             </div>
         </form>
