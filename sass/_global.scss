@@ -1,4 +1,7 @@
 body{
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 1000px;
   font-family: $main-font;
   font-size: $font-size-base;
   //https://www.svgbackgrounds.com/#confetti-doodles
@@ -10,7 +13,7 @@ body{
   }
   section{
     margin-top: 50px;
-    padding: 30px;
+    /*padding: 30px;*/
     text-align: center;
     h1{
       font-family: $font-dream-bold;
@@ -27,13 +30,11 @@ body{
       font-size: 3.6rem;
   }
   .presentacion__texto{
-      margin: 4rem 7rem;
       font-size: 1.1rem;
       line-height: 32px;
   }
 }
 
-//Aplico bloque BEM
 .intro-contenido{
     margin: 0 30px;
   	background-color: rgba(155,222,172,0.35);
@@ -122,7 +123,7 @@ body{
   height: 30vh;
   &::before {
       content: '';
-      position: absolute;
+      /* position: absolute;*/
       bottom: 0;
       width: 0;
       height: 0;
@@ -200,7 +201,7 @@ body{
     height: 50px;
     transition: height 1s;
     &:hover{
-        height: 65px;
+        height: 60px;
     }
     a{
       color: white;
@@ -221,7 +222,7 @@ body{
   background-position-x: center;
   background-size: 2200px 300px;
   background-color: $turquoise;
-  height: 80vh;
+  min-height: 80vh;
   >div {
       padding: 10px 50px;
       text-align: center;
@@ -291,7 +292,7 @@ body{
   padding: 100px 0;
   background-image: url('../images/typewriter.jpg');
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   h1{
       font-size: 3.9rem;
       color: $celadon;

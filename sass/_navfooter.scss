@@ -8,7 +8,7 @@
 }
 
 .navbar-toggler-icon{
-  color:white;
+  color: white;
 }
 .active:hover {
     border-bottom: solid 2px $turquoise;
@@ -17,6 +17,12 @@
 
 // Footer:
 
+footer{
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+}
 //maps:
 $red-social:(
   facebook: #1d4e89,

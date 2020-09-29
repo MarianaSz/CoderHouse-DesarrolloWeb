@@ -29,6 +29,9 @@
   font-style: normal; }
 
 body {
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 1000px;
   font-family: "Gudea", sans-serif;
   font-size: 16px;
   background-color: #EBEBEC;
@@ -38,7 +41,7 @@ body {
     text-decoration: none !important; }
   body section {
     margin-top: 50px;
-    padding: 30px;
+    /*padding: 30px;*/
     text-align: center; }
     body section h1 {
       font-family: "dream_orphansbold";
@@ -51,7 +54,6 @@ body {
   font-size: 3.6rem; }
 
 .presentacion .presentacion__texto {
-  margin: 4rem 7rem;
   font-size: 1.1rem;
   line-height: 32px; }
 
@@ -123,7 +125,7 @@ body {
   height: 30vh; }
   .triangle::before {
     content: '';
-    position: absolute;
+    /* position: absolute;*/
     bottom: 0;
     width: 0;
     height: 0;
@@ -231,7 +233,7 @@ body {
   height: 50px;
   transition: height 1s; }
   .banner-video:hover {
-    height: 65px; }
+    height: 60px; }
   .banner-video a {
     color: white;
     font-size: 1.3rem;
@@ -247,7 +249,7 @@ body {
   background-position-x: center;
   background-size: 2200px 300px;
   background-color: #028090;
-  height: 80vh; }
+  min-height: 80vh; }
   .seccion-podcast > div {
     padding: 10px 50px;
     text-align: center;
@@ -344,6 +346,12 @@ body {
 .active:hover {
   border-bottom: solid 2px #028090;
   color: #1A5E63; }
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute; }
 
 .footer__red-social--facebook i {
   color: #1d4e89;
