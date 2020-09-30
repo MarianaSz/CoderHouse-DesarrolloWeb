@@ -58,53 +58,41 @@
     </nav>
     <section class="container-fluid seccion-formulario d-flex flex-column align-items-center">
       <div class="m-lg-3">
-         <h1 class="animate__animated animate__bounceIn">Contactate!</h1>
+         <h1 class="seccion-formulario__titulo animate__animated animate__bounceIn">Contactate!</h1>
       </div>
-      <div class="container">
-        <form class="d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInDownBig m-2" action="index.html" method="post">
-            <div class="form-inline p-1">
-              <label class="sr-only" for="nameForm">Nombre</label>
-              <div class="input-group mb-2 mr-sm-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">Nombre</div>
-                </div>
+      <div class="container px-3 px-lg-5">
+        <form class="animate__animated animate__fadeInDownBig m-2" action="index.html" method="post">
+            <div class="form-row d-flex justify-content-center">
+              <div class="form-group col-md-4">
+                <label for="nameForm">Nombre</label>
                 <input type="text" name="nameForm" class="form-control" id="nameForm">
               </div>
-              <label class="sr-only" for="surnameForm">Apellido</label>
-              <div class="input-group mb-2 mr-sm-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">Apellido</div>
-                </div>
-                <input type="text" class="form-control" id="surnameForm" name="surnameForm">
+              <div class="form-group col-md-4">
+                  <label for="surnameForm">Apellido</label>
+                  <input type="text" class="form-control" id="surnameForm" name="surnameForm">
               </div>
             </div>
-            <div class="p-1 form-inline">
-                <label class="sr-only" for="emailForm">Email</label>
-                <div class="input-group d-flex mb-2 mr-sm-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">Email</div>
-                    </div>
-                <input type="text" class="form-control" id="emailForm" name="emailForm">
-                </div>
-                <label class="sr-only" for="conocimientoForm">Como me conociste?</label>
-                <div class="input-group mb-2 mr-sm-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">Cómo me conociste?</div>
-                    </div>
-                <select class="flex-grow-1" requested name="conocimientoForm">
-                  <option value="" disabled selected hidden></option>
-                  <option value="instagram">Instagram</option>
-                  <option value="facebook">Facebook</option>
-                  <option value="youtube">Youtube</option>
-                  <option value="amigos">Amigos</option>
+            <div class="form-row d-flex justify-content-center">
+              <div class="p-1 form-group col-md-4">
+                  <label for="emailForm">Email</label>
+                  <input type="text" class="form-control" id="emailForm" name="emailForm">
+              </div>
+              <div class="p-1 form-group col-md-4">
+                <label for="conocimientoForm">Como me conociste?</label>
+                <select requested name="conocimientoForm" class="form-control">
+                    <option value="" disabled selected hidden></option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="amigos">Amigos</option>
                 </select>
               </div>
             </div>
-            <div class="form-group p-3">
+            <div class="form-group d-flex justify-content-center mt-4">
                 <label class="sr-only" for="comentario">Comentario</label>
-                <textarea id="comentario" name="Comentario" placeholder="Comentarios"></textarea>
+                <textarea class="form-control col-md-8" id="comentario" name="comentario" placeholder="Qué estás pensando?"></textarea>
             </div>
-            <div class="form-group p-3">
+            <div class="form-group d-flex justify-content-center p-3">
                 <button type="submit" class="btn boton-enviar mb-2">ENVIAR</button>
             </div>
         </form>
