@@ -121,6 +121,7 @@ body {
       padding: 15px 15px; }
 
 .triangle {
+  margin-top: 20px;
   position: relative;
   background: #028090;
   height: 25vh; }
@@ -131,7 +132,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 63px 63px 0 63px;
+    border-width: 43px 43px 0 43px;
     border-color: #028090 transparent transparent transparent;
     left: 50%;
     transform: translateX(-50%) translateY(100%); }
@@ -244,15 +245,11 @@ body {
       font-size: 1.5rem; }
 
 .seccion-podcast {
-  background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
-  background-repeat: no-repeat;
-  background-position-y: 230px;
-  background-position-x: center;
-  background-size: 2200px 300px;
-  background-color: #028090;
-  min-height: 80vh; }
+  margin-top: 50px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: rgba(200, 190, 188, 0.7); }
   .seccion-podcast > div {
-    padding: 10px 50px;
     text-align: center;
     overflow: hidden; }
     .seccion-podcast > div .seccion-podcast__titulo {
@@ -260,7 +257,7 @@ body {
       font-size: 2.4rem;
       padding: 10px;
       font-weight: 500;
-      color: #EBEBEC; }
+      color: #AB1F43; }
     .seccion-podcast > div .seccion-podcast__texto {
       color: white;
       line-height: 24px; }
@@ -274,23 +271,27 @@ body {
     .seccion-podcast > div iframe {
       overflow: hidden; }
 
-.seccion-cursos .seccion-cursos__titulo {
-  color: #89043D;
-  font-family: "dream_orphansbold_italic";
-  font-style: italic;
-  font-size: 2.3rem;
-  font-weight: 400;
-  border-bottom: solid 3px #AB1F43; }
+.seccion-podcast.row {
+  margin-left: 0;
+  margin-right: 0; }
 
-.seccion-cursos .curso-1 .curso-1__titulo {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 0 auto; }
-
-.seccion-cursos .curso-1 .curso-1__info {
-  text-align: center;
-  margin: 0 auto;
-  padding: 30px; }
+.seccion-cursos {
+  margin-top: 80px; }
+  .seccion-cursos .seccion-cursos__titulo {
+    color: #89043D;
+    font-family: "dream_orphansbold_italic";
+    font-style: italic;
+    font-size: 2.3rem;
+    font-weight: 400;
+    border-bottom: solid 3px #AB1F43; }
+  .seccion-cursos .curso-1 .curso-1__titulo {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 auto; }
+  .seccion-cursos .curso-1 .curso-1__info {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px; }
 
 .p-novedades {
   margin: 30px auto;
@@ -301,7 +302,7 @@ body {
   background-image: #89043D; }
 
 .seccion-formulario {
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
   /* padding: 100px 0;*/
   background-image: url("../images/typewriter.jpg");
   background-repeat: no-repeat;
@@ -310,14 +311,14 @@ body {
     font-size: 3.9rem;
     color: #9BDEAC;
     text-shadow: 0 0 3px #EBEBEC;
-    padding: 20px 0; }
+    padding: 25px 0; }
   .seccion-formulario form {
     margin: 0 5rem; }
     .seccion-formulario form label {
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-family: "dream_orphansregular";
       color: #1A5E63;
-      background-color: rgba(155, 222, 172, 0.8); }
+      background-color: rgba(155, 222, 172, 0.6); }
     .seccion-formulario form input, .seccion-formulario form select, .seccion-formulario form textarea {
       opacity: 0.5;
       font-style: italic;
@@ -326,7 +327,6 @@ body {
         border: solid 2px #9BDEAC; }
     .seccion-formulario form textarea {
       padding: 20px;
-      width: 35rem;
       height: 9.3rem;
       border-radius: 10px;
       text-align: center; }
