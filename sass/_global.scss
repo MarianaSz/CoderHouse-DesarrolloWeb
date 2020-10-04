@@ -36,6 +36,11 @@ body{
   }
 }
 
+.carousel{
+  margin-top: 300px !important;
+}
+
+
 .intro-contenido{
     margin: 0 30px;
   	background-color: rgba(155,222,172,0.35);
@@ -50,6 +55,32 @@ body{
           font-size: 1rem;
         	color: $color-wine;
    }
+}
+
+//Efectos:  https://mdbootstrap.com/snippets/jquery/marta-szymanska/625341#html-tab-view
+.blocks .block {
+  transform: perspective(600px) rotateY(-30deg);
+  transition: transform .3s;
+  &:hover {
+    transform: rotateY(0);
+   .overlay {
+      opacity: 1;
+    }
+  }
+ .overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity .3s ease;
+      transform: translate3d(0, 0, 0);
+      i{
+        color: $light-turquoise;
+      }
+    }
 }
 
 .intro-podcast{

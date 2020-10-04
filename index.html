@@ -10,13 +10,14 @@
       <meta name="keywords" content="bibliotacora, libros, lectura, leer, podcast, videos, novelas, cuentos, reseñas, críticas, cine">
       <meta name="description" content="Soy Lucía Osorio y Bibliotacora surgió como proyecto para hablar especialmente de libros, pero también de cine y un poco más. Encontrarás reseñas, recomendaciones, videos, cursos, etc.">
       <title>Bibliotacora</title>
-    <!-- Bootstrap CSS -->
-      <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Animación -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
       <!-- favicon -->
       <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
@@ -27,14 +28,14 @@
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
-
       <link rel="stylesheet" href="./css/main.css">
    </head>
      <body>
+        <!-- Menu Bar -->
         <nav class="navegacion navbar navbar-expand-lg shadow fixed-top navbar--custom">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./images/BBlogo2.jpg" alt="logo-bibliotacora" width="85px" height="45px">
+                <img src="./images/BBlogo2-resize.jpg" alt="logo-bibliotacora">
             </a>
             <button class="navbar-toggler btn-info" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon align-self-center"><img src="./images/plus.svg" alt="icono-plus"></span>
@@ -62,6 +63,7 @@
             </div>
           </div>
       </nav>
+      <!-- Presentacion -->
       <section class="presentacion">
         <div class="container w-100 mt-2 p-md-3 p-lg-5">
             <h1 class="presentacion__titulo animate__animated animate__heartBeat"> Bibliotácora</h1>
@@ -70,11 +72,20 @@
             </p>
         </div>
       </section>
-      <section class="d-flex flex-column justify-content-center m-lg-5 px-3 shadow intro-contenido">
-        <div class="d-flex justify-content-center row pt-2">
-            <div class="col-12 col-md-4 contenedor-imagen">
+      <!-- Resumen contenido -->
+      <section class="d-flex flex-column justify-content-center m-lg-5 p-4 shadow intro-contenido">
+        <!-- Presentación reseñas -->
+        <div class="d-flex justify-content-center align-center row pt-2">
+            <div class="col-12 col-md-4 p-3 contenedor-imagen">
                 <a href="resenias.html">
-                  <img class="rounded-circle" src="./images/miniatura_resenia-min.jpg" alt="imagen-reseñas" width="230px" height="150px">
+                  <div class="blocks">
+                    <div class="block">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <i class="fas fa-heart fa-3x tigerlily"></i>
+                      </div>
+                      <img class="rounded-circle image hoverable" src="./images/minresenia-resize.jpg" alt="imagen-reseñas">
+                    </div>
+                  </div>
                 </a>
             </div>
             <div class="col-12 col-md-8 p-3 px-md-3">
@@ -84,7 +95,8 @@
                 <p class="px-3 w-3 intro-contenido__texto" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-          </div>
+          </div
+          <!-- Presentacion videos -->
           <div class="d-flex justify-content-center row pt-2">
             <div class="col-12 col-md-8 px-3">
               <a href="videos.html"><h2 class="intro-contenido__titulo animate__animated animate__backInLeft">Videos</h2></a>
@@ -93,14 +105,29 @@
           </div>
           <div class="col-12 col-md-4 contenedor-imagen">
               <a href="videos.html">
-                <img class="rounded-circle px-3" src="./images/miniatura_videos-min.jpg" alt="imagen-de-videos" width="230px" height="150px">
+                <div class="blocks">
+                  <div class="block">
+                    <div class="overlay d-flex align-items-center justify-content-center">
+                        <i class="fas fa-heart fa-3x tigerlily"></i>
+                    </div>
+                    <img class="rounded-circle hoverable" src="./images/minvideo-resize2.jpg" alt="imagen-de-videos">
+                  </div>
+                </div>
               </a>
           </div>
         </div>
+        <!-- Presentacion Podcast -->
         <div class="d-flex justify-content-center row pt-2">
             <div class="col-12 col-md-4 contenedor-imagen">
                 <a href="novedades.html">
-                  <img class="rounded-circle px-3" src="./images/Inadaptadas_logo.jpg" alt="imagen-reseñas" width="230px" height="150px">
+                  <div class="blocks">
+                    <div class="block">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <i class="fas fa-heart fa-3x tigerlily"></i>
+                      </div>
+                      <img class="rounded-circle img-fluid" src="./images/Webp.net-resizeimage.jpg" alt="logo-inadaptadas-podcast">
+                    </div>
+                  </div>
                 </a>
             </div>
             <div class="col-12 col-md-8 p-3 px-md-3">
@@ -112,8 +139,9 @@
             </div>
       </div>
       </section>
+      <!-- Seccion carrousel imágenes -->
       <section class="m-lg-5">
-        <div id="carouselExampleIndicators" class="carousel slide mt-3 mt-lg-5" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mt-3 mt-lg-5 container" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block w-100" src="./images/slide_1-min.jpg" alt="primer-slide">
@@ -168,6 +196,7 @@
           <p>By Lucía Osorio </p>
        </div>
     </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
