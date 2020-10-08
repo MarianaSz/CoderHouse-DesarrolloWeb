@@ -59,7 +59,7 @@ body {
   line-height: 32px; }
 
 .carousel {
-  margin-top: 300px !important; }
+  margin-top: 200px !important; }
 
 .intro-contenido {
   margin: 0 30px;
@@ -244,12 +244,11 @@ body {
   font-weight: 400;
   border: none; }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .contenedor-reseñas .m-1 .col-md-6 {
-    flex: 0 0 23%; } }
-
-.videos div div {
-  overflow: hidden; }
+.videoWrapper {
+  overflow: hidden;
+  border-radius: 10%; }
+  .videoWrapper iframe {
+    border-radius: 10%; }
 
 .banner-video {
   background-color: #BB010B;
@@ -288,7 +287,10 @@ body {
         color: inherit;
         font-weight: bold; }
         .seccion-podcast > div .seccion-podcast__texto a:hover {
-          color: #9BDEAC; }
+          color: #89043D;
+          font-size: 1.1rem; }
+      .seccion-podcast > div .seccion-podcast__texto p {
+        font-weight: 500; }
     .seccion-podcast > div .iconos-podcast {
       text-align: center; }
     .seccion-podcast > div iframe {
@@ -329,7 +331,8 @@ body {
   /* padding: 100px 0;*/
   background-image: url("../images/typewriter.jpg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: auto auto; }
   .seccion-formulario .seccion-formulario__titulo {
     font-size: 3.9rem;
     color: #9BDEAC;

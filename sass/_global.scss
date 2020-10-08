@@ -37,7 +37,7 @@ body{
 }
 
 .carousel{
-  margin-top: 300px !important;
+  margin-top: 200px !important;
 }
 
 
@@ -117,8 +117,43 @@ body{
   }
 }
 
+// .flip-box {
+//   background-color: transparent;
+//   perspective: 1000px;
+//   .flip-box-inner {
+//       position:relative;
+//       text-align: center;
+//       transition: transform 0.8s;
+//       transform-style: preserve-3d;
+//       border-radius: 50%;
+//       width: 100%;
+//       height: 100%;
+//   }
+//   &:hover .flip-box-inner{
+//       transform: rotateY(180deg);
+//   }
+//   .flip-box-front, .flip-box-back{
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       -webkit-backface-visibility: hidden;
+//       backface-visibility: hidden;
+//       img{
+//         border-radius: 50%;
+//       }
+//   }
+//   .flip-box-back{
+//       background-color: $light-color-wine;
+//       color: white;
+//       font-family: $font-dream-bold;
+//       transform: rotateY(180deg);
+//       border-radius: 50%;
+//   }
+// }
+
+
 .aboutme-trabajos{
-   margin: 0 auto;
+    margin: 0 auto;
   .aboutme-trabajos__titulo{
       font-family: $font-dream-regular;
       font-size: 2rem;
@@ -208,22 +243,13 @@ body{
    }
  }
 
- @media (min-width: 768px) and (max-width: 991px) {
-   .contenedor-reseñas {
-     .m-1 {
-       .col-md-6{
-         flex: 0 0 23%;
-       }
-     }
-  }
- }
 
-.videos{
-  div{
-    div{
-        overflow: hidden;
-    }
-  }
+.videoWrapper{
+      overflow: hidden;
+      border-radius: 10%;
+      iframe{
+        border-radius: 10%;
+      }
 }
 
 // videos.html
@@ -253,15 +279,7 @@ body{
   padding: 2rem;
   border-radius: 10px;
   background-color: rgba(200,190,188,0.7);
-  // background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
-  // background-repeat: no-repeat;
-  // background-position-y: 230px;
-  // background-position-x: center;
-  // background-size: 2200px 300px;
-  // background-color: $turquoise;
-  // min-height: 80vh;
   >div {
-      // padding: 0px 50px;
       text-align: center;
       overflow: hidden;
       .seccion-podcast__titulo{
@@ -278,8 +296,12 @@ body{
             color: inherit;
             font-weight: bold;
             &:hover{
-              color: $celadon;
+              color: $color-wine;
+              font-size: 1.1rem;
             }
+          }
+          p{
+            font-weight: 500;
           }
     }
     .iconos-podcast{
@@ -336,6 +358,7 @@ body{
   background-image: url('../images/typewriter.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto auto;
   .seccion-formulario__titulo{
       font-size: 3.9rem;
       color: $celadon;
