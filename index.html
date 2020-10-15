@@ -17,6 +17,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
       <!-- Animación -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
       <!-- favicon -->
@@ -67,13 +68,13 @@
       <section class="presentacion">
         <div class="container w-100 mt-2 p-md-3 p-lg-5">
             <h1 class="presentacion__titulo animate__animated animate__heartBeat"> Bibliotácora</h1>
-            <p class="presentacion__texto mx-lg-5">Me llamo Lucía. Soy directora de cine y una de las cosas que más me gustan en el mundo es leer. Toda la vida estuve acompañada por mis bibliotecas.
+            <p class="presentacion__texto mt-5 mx-lg-5">Me llamo Lucía. Soy directora de cine y una de las cosas que más me gustan en el mundo es leer. Toda la vida estuve acompañada por mis bibliotecas.
             Bibliotácora es un catálogo personal (y caprichoso) de lo que leo. Una suerte de bitácora literaria en donde comparto mis impresiones sobre los libros. Como toda bitácora, tiene huecos. Grietas por las que a menudo se filtra el cine. Libros y películas son los protagonistas de este espacio dedicado a estimular la lectura y a pensar el cine.
             </p>
         </div>
       </section>
       <!-- Resumen contenido -->
-      <section class="d-flex flex-column justify-content-center m-lg-5 p-4 shadow intro-contenido">
+      <section class="d-flex flex-column justify-content-center mt-5 m-lg-3 p-4 shadow intro-contenido">
         <!-- Presentación reseñas -->
         <div class="d-flex justify-content-center align-center row pt-2">
             <div class="col-12 col-md-4 p-3 contenedor-imagen">
@@ -169,12 +170,41 @@
           </a>
         </div>
       </section>
-    <section class="container-fluid banner-horizontal d-flex flex-column align-items-center row">
-      <div class="d-none d-sm-block">
-          <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_6UtDs3.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;" loop autoplay></lottie-player>
-      </div>
-      <div class="col-12 col-md-8 text-center">
-        <p> Esta bibliotácora empieza acá </p>
+      <!-- Card deck -->
+      <section class="container">
+        <div class="card-deck">
+          <!-- Card -->
+          <div class="card mb-4 d-none d-sm-block">
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="./images/quote1.JPG" alt="quote-1">
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card mb-4">
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="./images/quote5.JPG" alt="quote2">
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card mb-4 d-none d-sm-block">
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="./images/quote2.JPG" alt="quote3">
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="container-fluid banner-horizontal row">
+      <div class="col-12 text-center shadow">
+        <p> Esta bibliotácora empieza acá</p>
       </div>
     </section>
     <footer class="navbar--custom d-flex flex-column justify-content-center align-items-center">
@@ -197,8 +227,6 @@
        </div>
     </footer>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

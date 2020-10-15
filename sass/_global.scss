@@ -37,9 +37,8 @@ body{
 }
 
 .carousel{
-  margin-top: 200px !important;
+  margin-top: 11rem !important;
 }
-
 
 .intro-contenido{
     margin: 0 30px;
@@ -83,24 +82,18 @@ body{
     }
 }
 
-.intro-podcast{
-    .intro-podcast__titulo{
-        font-family: $font-dream-bold;
-        font-size: 2.5rem;
-        color: $color-wine;
-    }
-}
-
 .banner-horizontal{
+    margin: 0;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
-    p{
-        background-color: $turquoise;
-        text-align: center;
-        color: $grey;
-        font-style: italic;
-        font-size: 1.4rem;
-    }
+    div{
+        border-radius: 10%;
+        p{
+            background-color: $turquoise;
+            color: $grey;
+            font-size: 1.4rem;
+        }
+  }
 }
 
 //aboutme.html, aplico BEM
@@ -111,46 +104,43 @@ body{
     font-family: $font-dream-italic;
     font-size: 2.8rem;
     letter-spacing: 1px;
+    &:hover{
+      text-shadow: 2px 2px 8px $color-wine;
+    }
   }
   .aboutme__texto{
     line-height: 1.9rem;
   }
 }
 
-// .flip-box {
-//   background-color: transparent;
-//   perspective: 1000px;
-//   .flip-box-inner {
-//       position:relative;
-//       text-align: center;
-//       transition: transform 0.8s;
-//       transform-style: preserve-3d;
-//       border-radius: 50%;
-//       width: 100%;
-//       height: 100%;
-//   }
-//   &:hover .flip-box-inner{
+// .flip-container {
+//     perspective: 1000;
+//     display: inline-block;
+//     &:hover .flip-inner{
 //       transform: rotateY(180deg);
+//     }
+//     .flip-inner{
+//         transition: 0.5s;
+//         transform-style: preserve-3d;
+//     }
+//     .front, .back{
+//         backface-visibility: hidden;
+//         position: absolute;
+//         border-radius: 10%;
+//         width: 100%;
+//         height: auto;
+//     }
+//     .front{
+//         z-index: 1;
+//         transform: rotateY(180deg);
+//     }
+//     .back{
+//         z-index: 2; /* back side, placed above front */
+//         transform: rotateY(0deg);
+//         background-color: $color-wine;
+//         color: white;
+//     }
 //   }
-//   .flip-box-front, .flip-box-back{
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       -webkit-backface-visibility: hidden;
-//       backface-visibility: hidden;
-//       img{
-//         border-radius: 50%;
-//       }
-//   }
-//   .flip-box-back{
-//       background-color: $light-color-wine;
-//       color: white;
-//       font-family: $font-dream-bold;
-//       transform: rotateY(180deg);
-//       border-radius: 50%;
-//   }
-// }
-
 
 .aboutme-trabajos{
     margin: 0 auto;
@@ -162,7 +152,7 @@ body{
       color: $color-wine;
       &:hover{
         color: $light-color-wine;
-        font-size: 1.6rem;
+        font-size: 2.1rem;
       }
     }
     #aboutme-trabajos__lista{
@@ -196,7 +186,7 @@ body{
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 43px 43px 0 43px;
+      border-width: 40px 40px 0 40px;
       border-color: $turquoise transparent transparent transparent;
       left: 50%;
       transform: translateX(-50%) translateY(100%);
@@ -324,31 +314,84 @@ body{
       color: $color-wine;
       font-family: $font-dream-italic;
       font-style: italic;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       font-weight: 400;
       border-bottom: solid 3px $light-color-wine;
   }
-  .curso-1{
-    .curso-1__titulo{
-        font-size: 1.2rem;
-        font-style: italic;
-        margin: 0 auto;
-      }
-    .curso-1__info{
-        text-align: center;
-        margin: 0 auto;
-        padding: 30px;
-      }
-  }
 }
 
+// Sección del taller
+.taller-1{
+    .taller-1__presentacion{
+      min-height: 350px;
+      background:  -webkit-linear-gradient(rgba(black, 0.5), rgba(black, 0.1)), url("../images/cursoonline-resize2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow-x: hidden;
+      //https://codepen.io/markmead/pen/wvwjePG
+      h2{
+        padding-top: 15px;
+        color: $light-turquoise;
+        font-family: $font-dream-bold;
+        font-size: 2.3rem;
+        text-align: left;
+        z-index: 2;
+        span {
+          background-image: linear-gradient(
+          transparent calc(65% - 5px),
+          darken($turquoise, 15%) 5px);
+          background-size: 0;
+          background-repeat: no-repeat;
+          display: inline;
+          transition: 0.5s ease;
+        }
+        &:hover {
+          span {
+            background-size: 100%;
+          }
+        }
+      }
+    }
+    .btn-inscripcion{
+        background-color: $light-turquoise;
+      }
+    .taller-1__descripcion{
+        font-size: 1.2rem;
+        color: black;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    .card{
+      background: none !important;
+      border: none;
+      button{
+        color: $turquoise !important;
+        width: 100%;
+        font-size: 1.3rem;
+      }
+      ul{
+        list-style-type: none;
+        color: $dark-turquoise;
+      }
+    }
+    .modal-title{
+      color: $turquoise;
+    }
+    form{
+      label{
+        color: $dark-turquoise;
+      }
+    }
+}
+
+
+//Banner novedades
 .p-novedades{
-  margin: 30px auto;
-  padding: 8px 50px;
+  margin-top: 8rem;
   font-style: italic;
-  font-size: 1.2rem;
-  color: $turquoise;
-  background-image: $color-wine;
+  font-size: 1.7rem;
+  color: $color-wine;
 }
 
 //contacto.html
@@ -358,7 +401,7 @@ body{
   background-image: url('../images/typewriter.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto auto;
+  background-size: cover;
   .seccion-formulario__titulo{
       font-size: 3.9rem;
       color: $celadon;

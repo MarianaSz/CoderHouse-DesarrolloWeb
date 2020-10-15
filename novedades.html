@@ -8,10 +8,14 @@
     <title>Bibliotacora - Novedades</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet"> rel="stylesheet">
+    <!-- Animación -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -120,20 +124,153 @@
     <div style="height: 120px; overflow: hidden;" >
       <div style="height: 120px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,40.95 C236.73,-4.44 303.89,149.50 500.84,21.20 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgba(200,190,188,0.7);"></path></svg></div>
     </div>
-    <section class="container mt-5 seccion-cursos">
+    <section class="container mt-5 mb-5 seccion-cursos">
       <h2 class="seccion-cursos__titulo">Cursos y talleres</h2>
-      <div> <!-- actualmente hay un curso solo, de haber mas se cargaría debajo con el mismo formato. -->
-        <div class="p-2 curso-1 row">
-          <h3 class="curso-1__titulo col-12">Titulo del curso</h3>
-          <p class="curso-1__info col-12">Contenido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br>
+    </section>
+    <section class="container taller-1 mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-8 taller-1__presentacion">
+            <h2><span>DEL LIBRO A LA PANTALLA: taller de cine y literatura</span></h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 pt-3 pt-md-0 px-3">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row"><i class="far fa-calendar-alt"></i></th>
+                <td>Inicio:</td>
+                <td>01/11/2020</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-chalkboard"></i></th>
+                <td>Modalidad:</td>
+                <td>Virtual</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-comments"></i></th>
+                <td>Dinámica</td>
+                <td>Teórica - Debate </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-users"></i></th>
+                <td>Público:</td>
+                <td>General, no es necesario tener conocimientos técnicos</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-edit"></th>
+                <td colspan="2">
+                  <button type="button" class="btn btn-teal btn-rounded btn-sm btn-inscripcion m-0 shadow" data-toggle="modal" data-target="#fullHeightModalRight">Inscribirme </button>
+                </td>
+            </tbody>
+          </table>
+        </div>
+        <!-- Full Height Modal Right -->
+        <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="modalInscripcionTaller" aria-hidden="true">
+          <div class="modal-dialog modal-full-height modal-right" role="dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title w-100 font-weight-bold" id="modalInscripcionTaller">Inscripción al curso</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="animate__animated animate__fadeInDownBig m-2" action="index.html" method="post">
+                  <div class="form-group">
+                    <label class="px-2" data-error="wrong" data-success="right" for="nombre-inscripcion"><i class="fas fa-user prefix grey-text px-2"></i>Nombre</label>
+                    <input type="text" id="nombre-inscripcion" class="form-control validate">
+                  </div>
+                  <div class="form-group">
+                    <label class="px-2" data-error="wrong" data-success="right" for="email-inscripcion"> <i class="fas fa-envelope prefix grey-text px-2"></i>Email</label>
+                    <input type="email" id="email-inscripcion" class="form-control validate">
+                  </div>
+                  <div class="form-group">
+                    <label class="px-2" data-error="wrong" data-success="right" for="mensaje-inscripcion"><i class="fas fa-pencil-alt prefix grey-text px-2"></i>Mensaje</label>
+                    <textarea type="text" id="mensaje-inscripcion" class="md-textarea form-control" rows="4"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button type="submit" class="btn btn-inscripcion">Enviar</button>
+                </div>
+              </form>
+            </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="container-fluid p-novedades">
-      <div>
-        <p> Ya vendrán más novedades... </p> <!-- frase -->
+      <!-- Descripción del taller -->
+      <div class="taller-1__descripcion row mt-5">
+        <p class="col-12 col-sm-6 col-lg-8"> La literatura fue una de las principales fuentes de inspiración a lo largo de la historia del cine. Desde obras como El mago de Oz, Los miserables o El Quijote hasta éxitos editoriales como Harry Potter o El Señor de los Anillos. Incluso hoy muchas adaptaciones cinematográficas han superado a sus originales y hoy resuenan más los títulos de las películas que de los libros. El asunto es: ¿cómo traducir lo literario en imagen?<br>
+        Diálogos, actuación, puesta en escena, angulación de cámara, iluminación, escenografía, vestuario, sonorización, montaje. Son algunas de las herramientas con las que cuenta el cineasta a la hora de crear.<br><br>
+        <strong>El objetivo de este curso online es dar un panorama completo sobre cuestiones de la adaptación para poder analizar los factores que hicieron posible la transformación de un libro a una película.</strong>
+        </p>
+      </div>
+      <!-- Accordion información del taller -->
+      <div class="accordion col-12 col-sm-6 col-lg-8 mt-5" id="accordionExample">
+          <div class="card">
+              <div class="card-header text-left" id="headingOne">
+                  <h2 class="mb-0">
+                      <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-angle-down px-2"></i></i>Bibiografía</button>
+                  </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body text-left">
+                    <ul>
+                      <li>“Cine y literatura”, Sergio Wolf </li>
+                      <li>"Expiación", Ian McEwan</li>
+                      <li>"Como agua para chocolate", Laura Esquivel</li>
+                      <li>"El cuento de la criada", Margaret Atwood</li>
+                      <li>"Las ruinas circulares", J.L. Borges</li>
+                      <li>"Zama", Antonio Di Benedetto</li>
+                      <li>“El mono en el remolino”, Selva Almada</li>
+                      <li>"Orgullo y prejuicio", Jean Austen</li>
+                      <li>"Matilda", Rohal Dahl</li>
+                      <li>"El corazón de las tinieblas", Joseph Conrad</li>
+                      <li>"Persépolis", Marjane Satrapi</li>
+                      <li>“El viejo y el mar”, Ernest Hemingway</li>
+                      <li>“Sueno de una noche de verano”, W. Shakespeare</li>
+                      <li>“Mientras agonizo”, W. Faulkner</li>
+                      <li>“Rashomón”, Akutagawa</li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header text-left" id="headingTwo">
+                  <h2 class="mb-0">
+                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-angle-down px-2"></i>Filmografía</button>
+                  </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body text-left">
+                      <ul>
+                        <li>"Expiación, deseo y pecado", de Joe Wright </li>
+                        <li>"Como agua para chocolate", de Alfonso Arau </li>
+                        <li>"El cuento de la criada", de Bruce Miller (Serie)</li>
+                        <li>"El origen", de Christopher Nolan</li>
+                        <li>"Zama", de Lucrecia Martel</li>
+                        <li>"Orgullo y prejuicio", de Joe Wright</li>
+                        <li>"Matilda", de Danny DeVito </li>
+                        <li>"Apocalypse Now", de Francis Ford Coppola</li>
+                        <li>"El corazón de las tinieblas: apocalipsis de un cineasta", de Eleanor Coppola</li>
+                        <li>"Ad Astra", de James Gray</li>
+                        <li>"Persépolis", de Vincent Paronnaud</li>
+                        <li>“Hermia y Helena”, Matías Piñeiro</li>
+                        <li>“Sueño de una noche de verano”, Michael Hoffman</li>
+                        <li>“Mientras Agonizo”, James Franco</li>
+                        <li>“Rashomón”, A. Kurosawa</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
       </div>
     </section>
+    <!-- Banner novedades-->
+    <section class="container-fluid text-center p-novedades">
+      <div>
+        <p class="animate__animated animate__tada"> Ya vendrán más novedades... </p>
+      </div>
+    </section>
+    <!-- Footer -->
     <footer class="navbar--custom d-flex flex-column justify-content-center align-items-center">
        <div class="p-2 footer-red-social">
            <a class="p-2 footer__red-social--facebook" href="https://www.facebook.com/bibliotacora">
