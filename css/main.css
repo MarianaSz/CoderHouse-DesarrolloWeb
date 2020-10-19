@@ -59,7 +59,7 @@ body {
   line-height: 32px; }
 
 .carousel {
-  margin-top: 11rem !important; }
+  margin-top: 9rem !important; }
 
 .intro-contenido {
   margin: 0 30px;
@@ -68,7 +68,16 @@ body {
     font-size: 2.3rem;
     font-family: "dream_orphansregular", serif;
     color: #AB1F43;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    z-index: 2; }
+    .intro-contenido .intro-contenido__titulo span {
+      background-image: linear-gradient(transparent calc(65% - 5px), #e77c97 5px);
+      background-size: 0;
+      background-repeat: no-repeat;
+      display: inline;
+      transition: 0.5s ease; }
+    .intro-contenido .intro-contenido__titulo:hover span {
+      background-size: 100%; }
   .intro-contenido .intro-contenido__texto {
     padding: 20px 150px;
     font-size: 1rem;
@@ -112,8 +121,6 @@ body {
     font-family: "dream_orphansbold_italic";
     font-size: 2.8rem;
     letter-spacing: 1px; }
-    .aboutme .aboutme__titulo:hover {
-      text-shadow: 2px 2px 8px #89043D; }
   .aboutme .aboutme__texto {
     line-height: 1.9rem; }
 
@@ -145,7 +152,10 @@ body {
   margin-top: 20px;
   position: relative;
   background: #028090;
-  height: 25vh; }
+  height: 28vh; }
+  @media screen and (min-width: 768px) {
+    .triangle {
+      height: 18vh; } }
   .triangle::before {
     content: '';
     position: absolute;
@@ -358,10 +368,19 @@ body {
   color: #1A5E63; }
 
 .p-novedades {
-  margin-top: 8rem;
-  font-style: italic;
-  font-size: 1.7rem;
-  color: #89043D; }
+  margin-top: 8rem; }
+  .p-novedades p {
+    font-size: 1.7rem;
+    color: #89043D;
+    z-index: 2; }
+    .p-novedades p span {
+      background-image: linear-gradient(transparent calc(80% - 5px), #fa4693 5px);
+      background-size: 0;
+      background-repeat: no-repeat;
+      display: inline;
+      transition: 1s ease; }
+    .p-novedades p:hover span {
+      background-size: 100%; }
 
 .seccion-formulario {
   margin: 30px 0 0 0;
